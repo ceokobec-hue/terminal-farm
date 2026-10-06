@@ -32,6 +32,7 @@ cd terminal-farm && npm install
 scripts/start.sh        # 맥: 서버를 켜고 브라우저로 http://localhost:5274 를 엽니다
 ```
 
+- `npm install` 때 `npm warn install-scripts …` 노란 경고가 나와도 **정상**입니다(최근 npm 의 안전 안내). 승인하지 말고 그대로 다음 줄로 가세요.
 - **윈도우·리눅스**: 마지막 줄 대신 `npm start` 를 실행하고 브라우저로 http://localhost:5274 를 여세요. 그 창을 닫으면 농장도 꺼집니다.
 - Node 22.13 이상. **macOS Terminal 앱**에서 [터미널로 가기](탭 이동)·[새 대화](새 탭)까지 다 됩니다.
   다른 터미널·운영체제에서는 농장을 **보는 것**은 되고, 탭을 옮겨 주는 기능은 아직 없습니다.
