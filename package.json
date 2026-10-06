@@ -1,0 +1,37 @@
+{
+  "name": "terminal-farm",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "터미널 농장 — 이 컴퓨터의 코딩 에이전트 대화창을 농장의 일꾼으로 보여 주는 도구. A fork of Bot Crossing by Jarren Rocks.",
+  "license": "MIT",
+  "author": "Jarren Rocks",
+  "keywords": [
+    "claude-code",
+    "codex",
+    "coding-agent",
+    "pixel-art",
+    "farm",
+    "developer-tools",
+    "visualization"
+  ],
+  "engines": {
+    "node": ">=22.13"
+  },
+  "os": [
+    "darwin",
+    "win32",
+    "linux"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "start": "vite build && node server/serve.mjs",
+    "serve": "node server/serve.mjs",
+    "test": "node --test \"test/**/*.test.mjs\""
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "vite": "^7.1.0"
+  }
+}

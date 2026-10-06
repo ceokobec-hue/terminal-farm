@@ -1,0 +1,42 @@
+node_modules
+dist
+
+# Your colony: which repo sits on which plot, and what you archived. Holds the names and
+# paths of the repos you work in, so it stays out of the repository.
+data/*.json
+data/*.tmp
+# Your own icon: data/favicon.png and data/apple-touch-icon.png, if present, are served instead
+# of the farmer in public/ — a local touch that stays out of the repository.
+data/*.png
+
+# Per-machine Claude Code permissions — personal paths live in here.
+.claude/settings.local.json
+
+# Raw asset packs. The built glbs in public/assets are checked in instead — see the README
+# under "Where the art comes from" for how to re-fetch these if you need to rebuild.
+assets-src
+
+.DS_Store
+*.log
+
+# Local capture output — not part of the project.
+recordings
+
+# Sound samples. The game synthesises every sound it needs, so nothing here is required;
+# files dropped in alongside a manifest.json override the synth by name. Kept out of the
+# repository because the samples people use (Splice, most stock libraries) are licensed for
+# use in a work, not for redistribution on their own.
+public/audio/*
+!public/audio/README.md
+public/dev-mobile.html
+
+# Character design source — turnarounds, sculpts, high-res art, anything worked up for the
+# crew character itself rather than for the runtime. The built result ships; the source does
+# not. Same reasoning as the sound samples above: what is in the repository is MIT, and this
+# is the one part of the project deliberately kept out of that grant. See TRADEMARKS.md.
+design/character
+
+# 시안·조사 — 이 컴퓨터의 실제 대화창 제목·레포 이름·이름이 들어 있어 저장소에는 넣지 않음(디스크에만 둠)
+design/farm/
+design/city/
+design/research/
